@@ -1,64 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit Application</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourabh Sharma Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Credit Application</h1>
-        <form id="creditApplicationForm">
-            <fieldset>
-                <legend>Personal Data</legend>
-                <div id="applicants">
-                    <!-- Dynamic input fields for applicants will be inserted here -->
-                </div>
-                <button type="button" onclick="addApplicant()">Add Applicant</button>
-            </fieldset>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Sourabh Sharma</h1>
+      <p>New Delhi, India 110089</p>
+      <p><i class="fas fa-phone"></i> 91+ 9691826226 | <i class="fas fa-envelope"></i> sourabhsharma961753@gmail.com</p>
+    </header>
 
-            <fieldset>
-                <legend>Vehicle Information</legend>
-                <div id="vehicleInfo">
-                    <label for="vehicleCategory">Category:</label>
-                    <select id="vehicleCategory" required>
-                        <option value="">Select a category</option>
-                        <option value="CAR">Car</option>
-                        <option value="CARAVAN">Caravan</option>
-                        <option value="MOTOBIKE">Motorbike</option>
-                        <option value="COMMERCIAL">Commercial</option>
-                    </select>
-                    
-                    <label for="vehicleBrand">Brand:</label>
-                    <input type="text" id="vehicleBrand" required>
-                    
-                    <label for="vehicleModel">Model:</label>
-                    <input type="text" id="vehicleModel" required>
-                    
-                    <label for="vehicleVIN">VIN:</label>
-                    <input type="text" id="vehicleVIN" required>
-                    
-                    <label for="vehiclePrice">Price:</label>
-                    <input type="number" id="vehiclePrice" min="0" required>
-                </div>
-            </fieldset>
+    <!--upload photo-->
+    
+    <!--<section id="upload" class="fade-in">
+    <h2>Upload Your Photo</h2>
+    <form id="uploadForm">
+        <input type="file" id="photoInput" accept="image/*" required>
+        <button type="submit">Upload Photo</button>
+    </form>
+    <div id="photoPreview" style="margin-top: 20px;"></div>
+</section>-->
 
-            <fieldset>
-                <legend>Financial Data Requested</legend>
-                <div id="financialData">
-                    <label for="loanAmount">Loan Amount:</label>
-                    <input type="number" id="loanAmount" min="0" required>
-                    
-                    <label for="loanTerm">Loan Term (months):</label>
-                    <input type="number" id="loanTerm" min="1" required>
-                </div>
-            </fieldset>
+    <!-- Summary Section -->
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>
+        I am in my third year of graduation with a Bachelor of Science in Botany, and I am motivated and eager to learn. 
+        Focused on improving myself, I'm dedicated to growing my skills and ready to contribute with a positive and flexible attitude.
+      </p>
+    </section>
 
-            <button type="submit">Submit Application</button>
-        </form>
-    </div>
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Fundamental HTML and CSS</li>
+        <li>Introductory JavaScript Knowledge</li>
+        <li>Communication Skills</li>
+        <li>Teamwork and Collaboration</li>
+        <li>Time Management</li>
+        <li>Document Management</li>
+        <li>Adaptable Mindset</li>
+        <li>Attention to Detail</li>
+      </ul>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Experience Section -->
+    <section class="experience">
+      <h2>Experience</h2>
+      <h3>Self-Employed / Independent Content Creator</h3>
+      <p><strong>July 2024 - Current | New Delhi, India</strong></p>
+      <ul>
+        <li>Increased follower base and engagement by remixing relatable comedy videos and interacting with viewers.</li>
+        <li>Created shareable and viral Instagram humor content.</li>
+        <li>Analyzed audience preferences to create a cohesive content strategy.</li>
+        <li>Grew follower base through engaging comedy content.</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education and Training</h2>
+      <ul>
+        <li>Peace College, Jiwaji University Gwalior - Bachelor of Science Botany</li>
+        <li>Makhanlal Chaturvedi University, Bhopal - DCA Diploma in Computer Application</li>
+      </ul>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section class="accomplishments">
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>School-Level Running Competition Participant</li>
+        <li>School-Level Debate Competition Participant</li>
+        <li>Art and Craft School Participation</li>
+      </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2024 Sourabh Sharma | All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
